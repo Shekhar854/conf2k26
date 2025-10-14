@@ -5,7 +5,9 @@ import PurpleNavigation from "./components/PurpleNavigation";
 import AboutWithImage from "./components/AboutWithImage";
 import ActionButtons from "./components/ActionButtons";
 import ThemeToggle from "./components/ThemeToggle";
+import Timeline from "./components/Timeline";
 import buildingImage from '../../public/stock_images/indian_fort_historic_b32d36ef.jpg';
+import Footer from "./components/Footer";
 
 export default function Home() {
   const announcements = [
@@ -38,7 +40,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen mx-5">
       <div className="fixed top-4 right-4 z-50">
         <ThemeToggle />
       </div>
@@ -51,10 +53,12 @@ export default function Home() {
         content={aboutContent}
         imageUrl={buildingImage}
       />
+     <Timeline/>
       <ActionButtons
         onFlyerClick={() => console.log('Download flyer')}
         onRegisterClick={() => console.log('Register now')}
       />
+      <Footer/>
     </div>
   );
 }

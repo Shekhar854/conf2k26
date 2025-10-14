@@ -2,9 +2,9 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
-      <div className="relative flex flex-col items-center w-full max-w-[98vw] opacity-0" style={{ opacity: 1, transform: "none" }}>
-        <div className="absolute top-3 sm:top-6 w-[80%] sm:w-[90%] h-[1px] sm:h-1 bg-[#D2D2D2]">
+    <div className="my-10">
+      <div className="bg-white relative flex flex-col items-center w-full max-w-[99vw] opacity-0" style={{ opacity: 1, transform: "none" }}>
+        <div className="absolute top-3 sm:top-6 w-[80%] sm:w-[90%] h-[1px] sm:h-1 bg-[#D2D2D2] ">
           <div className="h-full bg-[#4B82C8] relative" style={{ width: "50%" }}></div>
           <div className="absolute top-1/2 size-2 sm:size-5 bg-[#F43C52] rounded-full shadow-lg animate-breathing" style={{ transform: "translate(-50%, -50%)", left: "50%" }}></div>
         </div>
