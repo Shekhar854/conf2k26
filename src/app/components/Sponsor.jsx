@@ -3,7 +3,8 @@ import React from 'react'
 const Sponsor = () => {
     return (
         <div>
-            <div className="p-6 border border-gray-300 rounded-lg shadow-md max-w-[100%] mx-auto my-10 bg-gradient-to-r from-[#024CAD] to-[#0CC1E0] text-white">
+            
+        <div className="p-6 border border-gray-300 rounded-lg shadow-md max-w-[100%] mx-auto my-10 bg-gradient-to-r from-[#024CAD] to-[#0CC1E0] text-white">
                 <h2 className="text-xl font-bold mb-4">Student Support</h2>
                 <div className="space-y-4">
                     <div className="flex items-start">
@@ -17,6 +18,7 @@ const Sponsor = () => {
                     </div>
                 </div>
             </div>
+<div> </div>
             <style>
                 {`
                     @keyframes scrollLeft {
@@ -87,12 +89,20 @@ const Sponsor = () => {
                             src="/logo/Logo8.jpg" 
                         />
                     </div>
-                    <img 
-                        alt="IEEE logo with blue globe and text IEEE, shown in a row of sponsor logos for a technical conference, conveying a professional and collaborative atmosphere" 
-                        loading="lazy" width="200" height="112" decoding="async" data-nimg="1" 
-                        className="h-28 w-auto object-contain" style={{ color: "transparent" }} 
-                        src="https://www.iccca.co.in/Sponser%20Logos/ieee.png" 
-                    />
+                    <img
+                       alt="IEEE logo with blue globe and text IEEE, shown in a row of sponsor logos for a technical conference, conveying a professional and collaborative atmosphere"
+                       loading="lazy" width="200" height="112" decoding="async" data-nimg="1"
+                       className="h-28 w-auto object-contain" style={{ color: "transparent" }}
+                       src="https://www.iccca.co.in/Sponser%20Logos/ieee.png"
+                   />
+                   <div className="mx-10 flex-shrink-0 relative h-28 w-auto">
+                       <img
+                           alt="Logo for Conf2"
+                           loading="lazy" width="200" height="112" decoding="async" data-nimg="1"
+                           className="h-28 w-auto object-contain" style={{ color: "transparent" }}
+                           src="/logo/Conf2.png"
+                       />
+                   </div>
                 </div>
             </div>
 

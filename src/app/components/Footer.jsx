@@ -1,118 +1,88 @@
-import Image from 'next/image'
-import React from 'react'
-import buildingImage from '../../../public/stock_images/CONF.png';
-import Link from 'next/link';
+import React from 'react';
+import { FaHome, FaEnvelope, FaPhone, FaWhatsapp, FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube, FaPinterestP } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div>
-      <footer className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap md:text-left text-center order-first">
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
-              <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
-                <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
-                  <label htmlFor="footer-field" className="leading-7 text-sm text-gray-600">Placeholder</label>
-                  <input type="text" id="footer-field" name="footer-field" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-                </div>
-                <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
-              </div>
-              <p className="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
-                <br className="lg:block hidden" />waistcoat green juice
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="bg-gray-100">
-          <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-            <Link href={"https://www.facebook.com/iimtmeerutgreaternoida"} className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-              <Image src={buildingImage} alt="IIMT CONF" className="w-10 h-10" />
-              <span className="ml-3 text-xl">IIMT CONF</span>
-            </Link>
-            <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2025 IIMT CONF —
-              <a href="#" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@devrithm</a>
+    <footer className="bg-red-700 text-white pt-12">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Column 1: Who We Are */}
+          <div className="mb-8 md:mb-0">
+            <h2 className="text-2xl font-bold mb-4">Who We Are</h2>
+            <p className="text-gray-300 mb-4 text-sm">
+              IIMT as a group, large and diversified, imparts knowledge in the field of Engineering, Management, Education, Law, Pharmacy, etc. It has highly qualified and experienced faculty members in their respective functional areas. IIMT boasts of having more than 8,000 students in various courses in six colleges. The educational group has been dedicated towards providing quality professional education through well-accredited courses, Seminars, Conferences, Guest Lectures, Industrial visits and excellent Academic facilities.
             </p>
-            <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-              <Link href={"https://www.facebook.com/iimtmeerutgreaternoida"} className="text-gray-500">
-                <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </Link>
-              <Link href={"https://x.com/iimtnoida"} className="ml-3 text-gray-500">
-                <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </Link>
-              <Link href={"https://www.instagram.com/iimtindia/?hl=en"} className="ml-3 text-gray-500">
-                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-              </Link>
-              <Link href={"https://www.linkedin.com/school/iimt-group-colleges/"} className="ml-3 text-gray-500">
-                <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0" className="w-5 h-5" viewBox="0 0 24 24">
-                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                </svg>
-              </Link>
-            </span>
+            <div className="space-y-2">
+              <a href="#" className="text-white font-semibold underline hover:text-yellow-400">What We Do</a><br/>
+              <a href="#" className="text-white font-semibold underline hover:text-yellow-400">Impeccable Placements</a>
+            </div>
+            <button className="mt-6 bg-yellow-500 text-black font-bold py-2 px-6 rounded hover:bg-yellow-600 transition-colors">
+              APPLY NOW
+            </button>
+          </div>
+
+          {/* Column 2: Connect & Follow */}
+          <div className="mb-8 md:mb-0">
+            <h2 className="text-2xl font-bold mb-4">Connect With Us</h2>
+            <ul className="space-y-3 text-gray-300 text-sm">
+              <li className="flex items-start">
+                <FaHome className="mr-3 mt-1 flex-shrink-0" />
+                <span>IIMT Group of Colleges, Plot No. 19 & 20, Knowledge Park - III Greater Noida - 201310, Uttar Pradesh, India</span>
+              </li>
+              <li className="flex items-center">
+                <FaEnvelope className="mr-3 flex-shrink-0" />
+                <a href="mailto:enquiries@iimtindia.net" className="hover:text-yellow-400">enquiries@iimtindia.net</a>
+              </li>
+              <li className="flex items-center">
+                <FaEnvelope className="mr-3 flex-shrink-0" />
+                <a href="mailto:contact_gn@iimtindia.net" className="hover:text-yellow-400">contact_gn@iimtindia.net</a>
+              </li>
+              <li className="flex items-center">
+                <FaPhone className="mr-3 flex-shrink-0" />
+                <span>0120-2322655, 0120-2475000</span>
+              </li>
+              <li className="flex items-center">
+                <FaPhone className="mr-3 flex-shrink-0" />
+                <span>+91 9717015300</span>
+              </li>
+              <li className="flex items-center">
+                <FaWhatsapp className="mr-3 flex-shrink-0" />
+                <span>+91 9911009144</span>
+              </li>
+            </ul>
+            <h2 className="text-2xl font-bold mt-8 mb-4">Follow Us On</h2>
+            <div className="flex space-x-4">
+              <a href="#" className="border border-white rounded-full p-2 hover:bg-yellow-500 hover:text-black transition-colors"><FaFacebookF /></a>
+              <a href="#" className="border border-white rounded-full p-2 hover:bg-yellow-500 hover:text-black transition-colors"><FaInstagram /></a>
+              <a href="#" className="border border-white rounded-full p-2 hover:bg-yellow-500 hover:text-black transition-colors"><FaTwitter /></a>
+              <a href="#" className="border border-white rounded-full p-2 hover:bg-yellow-500 hover:text-black transition-colors"><FaLinkedinIn /></a>
+              <a href="#" className="border border-white rounded-full p-2 hover:bg-yellow-500 hover:text-black transition-colors"><FaYoutube /></a>
+              <a href="#" className="border border-white rounded-full p-2 hover:bg-yellow-500 hover:text-black transition-colors"><FaPinterestP /></a>
+            </div>
+          </div>
+
+          {/* Column 3: Map */}
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.933496596528!2d77.48961477607098!3d28.481549375747527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceb07c7e0cae3%3A0x82b288a0fa2a6a5!2sIIMT%20COLLEGE%20KNOWLEDGE%20PARK%203%20%2C%20GREATER%20NOIDA!5e0!3m2!1sen!2sin!4v1760561540348!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
-      </footer>
-    </div>
-  )
-}
+      </div>
+      <div className="border-t border-red-600 mt-8">
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          <p className="text-sm text-gray-300">&copy; 2025 IIMT CONF — @devrithm</p>
+          {/* You can add the site logo here if you have it */}
+        </div>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

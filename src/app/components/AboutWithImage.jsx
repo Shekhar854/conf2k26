@@ -1,9 +1,6 @@
-import buildingImage from '../../../public/stock_images/indian_fort_historic_b32d36ef.jpg';
-
 export default function AboutWithImage({
-  title = "About UPCON 2025",
-  content = [],
-  imageUrl = buildingImage
+  title = "About ICNGWCET 2026",
+  content = [] 
 }) {
   return (
     <section 
@@ -15,7 +12,7 @@ export default function AboutWithImage({
       <div 
         className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: `url(${buildingImage})`,
+          backgroundImage: `url('/logo/iimt25.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -23,12 +20,12 @@ export default function AboutWithImage({
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+          <div className="space-y-6 bg-white/30 backdrop-blur-md p-8 rounded-lg border border-white/40 shadow-lg">
             <h2 className="font-heading font-bold text-3xl md:text-4xl text-gray-900" data-testid="text-about-title">
               {title}
             </h2>
             
-            <div className="space-y-4 text-gray-700 leading-relaxed">
+            <div className="space-y-4 text-gray-800 leading-relaxed">
               {content.map((paragraph, index) => (
                 <p key={index} className="text-justify italic" data-testid={`text-about-content-${index}`}>
                   {paragraph}
@@ -38,15 +35,13 @@ export default function AboutWithImage({
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="w-80 h-80 rounded-full overflow-hidden border-8 border-white shadow-2xl">
-                <img
-                  src={imageUrl}
-                  alt="Conference Venue"
-                  className="w-full h-full object-cover"
-                  data-testid="img-venue"
-                />
-              </div>
+            <div className="relative transition-transform duration-300 hover:scale-105">
+              <img
+                src="/stock_images/Conf26.png"
+                alt="Conference Venue"
+                className="w-full h-auto max-w-md object-cover rounded-lg shadow-2xl"
+                data-testid="img-venue"
+              />
             </div>
           </div>
         </div>

@@ -1,9 +1,9 @@
 import Image from "next/image";
-import buildingImage from '../../../public/stock_images/iimt.jpg';
+import buildingImage from '../../../public/stock_images/Conf26.png';
 
 export default function ConferenceHeader({
-  title = "UPCON 2025",
-  dates = "13-15 December'25"
+  title = "ICNGWCET-2K26",
+  dates = "12-13 SEP'26"
 }) {
   return (
     <div className="bg-gradient-to-br from-purple-100 via-pink-50 to-purple-100 py-8">

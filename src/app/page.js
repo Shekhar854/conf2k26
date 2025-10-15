@@ -3,7 +3,6 @@ import ConferenceHeader from "./components/ConferenceHeader";
 import YellowBanner from "./components/YellowBanner";
 import PurpleNavigation from "./components/PurpleNavigation";
 import AboutWithImage from "./components/AboutWithImage";
-import ActionButtons from "./components/ActionButtons";
 import ThemeToggle from "./components/ThemeToggle";
 import Timeline from "./components/Timeline";
 import buildingImage from '../../public/stock_images/indian_fort_historic_b32d36ef.jpg';
@@ -12,6 +11,7 @@ import Gallery from "./components/Gallery";
 import Track from "./components/Track";
 import Sponsor from "./components/Sponsor";
 import ConferenceGuidelines from "./components/ConferenceGuideline";
+import LocationMap from "./components/LocationMap";
 
 export default function Home() {
   const announcements = [
@@ -27,20 +27,20 @@ export default function Home() {
     { label: "HOME", href: "/" },
     { label: "COMMITTEE", href: "/committee" },
     { label: "SPEAKERS", href: "/speakers", hasDropdown: true },
-    { label: "PROGRAM", href: "/program", hasDropdown: true },
+    { label: "PROGRAM", href: "/program" },
     { label: "REGISTRATION", href: "/registration" },
-    { label: "GUIDELINES", href: "/guideline", hasDropdown: false },
+    { label: "GUIDELINES", href: "/guideline" },
     // { label: "PhD COLLOQUIUM", href: "/phd" },
     { label: "SPONSORS", href: "/sponsors" },
     // { label: "ACCOMMODATION", href: "/accommodation", hasDropdown: true },
-    { label: "PREVIOUS UPCONS", href: "/previous", hasDropdown: true },
+    { label: "PREVIOUS EVENTS", href: "/previous", hasDropdown: true },
     { label: "CONTACT", href: "/contact" },
   ];
 
   const aboutContent = [
-    'The 12th "IEEE Uttar Pradesh Section International Conference on Electrical, Electronics and Computer Engineering (UPCON-2025)" will be held at IIT BHU, Varanasi, India from 13-15 December 2025. UPCON is the top notch International conference covering broad topics in the areas of Electrical, Computer, and Electronics Engineering.',
-    'UPCON conference is organized annually at various locations in Uttar Pradesh (UP). Prior to this, first eleven series of UPCON conferences were organized at GCET, Greater Noida (2014), Indian Institute of Information Technology Allahabad (2015), IIT BHU Varanasi (2016), GLA University Mathura (2017), MMMUT Gorakhpur (2018), AMU Aligarh (2019), MNNIT Allahabad (2020), BTKIT Dwarahat(2021), IIIT Allahabad (2022), Amity University (2023), and SRMCEM (2024).',
-    'The conference is technically and financially sponsored by IEEE UP Section. There are multiple tracks in the conference covering almost all areas of Electrical, Computer & Electronics Engineering. Conference Proceedings will be abstracted and indexed by IEEE Xplore.'
+    'IIMT College of Engineering Greater Noida: On the morning of August 18, 2005, we began our journey. Since its inception in 2005, it has contributed to the field of technical fields by providing high-quality engineering and management education. IIMT is a prestigious higher education institution that produces meritorious students with exceptional professional recognition and career growth in higher learning, producing meritorious students with excellent career growth and professional recognition.',
+    'At ICNGWCET-2K25, participants will delve into a rich tapestry of topics including advance microwave communication, 5G, 6G and beyond, AI-ML powered technologies, smart systems, edge computing, IoT ecosystems, block-chain, cyber security, and much more. With an emphasis on cross-disciplinary collaboration and real-world impact, this conference is not only a showcase of breakthrough ideas but also a breeding ground for partnerships that drive progress. Attendees can look forward to insightful keynote speeches from renowned experts, technical paper presentations upon new era of communication and interactive panel discussions, all designed to inspire innovation, foster dialogue, and foster global connections. Whether you are an experienced researcher, a curious student, a tech entrepreneur, or a policy-maker shaping the future of digital infrastructure, ICNGWCET-2K25 will offer a unique opportunity to connect, learn, and lead.',
+    'There are multiple tracks in the conference covering almost all areas of Electrical, Computer & Electronics Engineering. Conference Proceedings will be abstracted and indexed by IEEE Xplore.'
   ];
 
   return (
@@ -49,23 +49,19 @@ export default function Home() {
         <ThemeToggle />
       </div>
 
-      <ConferenceHeader title="UPCON 2025" dates="13-15 December'25" />
+      <ConferenceHeader title="ICNGWCET-2K26" dates="12-13 SEP'26 " />
       <YellowBanner announcements={announcements} />
       <PurpleNavigation items={navItems} />
       <AboutWithImage 
-        title="About UPCON 2025" 
+        title="About ICNGWCET-2K26 " 
         content={aboutContent}
         imageUrl={buildingImage}
       />
      <Timeline/>
-      <ActionButtons
-        onFlyerClick={() => console.log('Download flyer')}
-        onRegisterClick={() => console.log('Register now')}
-      />
       <Track/>
       <Sponsor/>
       <Gallery/>
-      <ConferenceGuidelines/>
+      <LocationMap/>
       <Footer/>
     </div>
   );
