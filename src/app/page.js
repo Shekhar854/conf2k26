@@ -10,6 +10,7 @@ import buildingImage from '../../public/stock_images/indian_fort_historic_b32d36
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Track from "./components/Track";
+import Sponsor from "./components/Sponsor";
 
 export default function Home() {
   const announcements = [
@@ -61,6 +62,7 @@ export default function Home() {
         onRegisterClick={() => console.log('Register now')}
       />
       <Track/>
+      <Sponsor/>
       <Gallery/>
       <Footer/>
     </div>
