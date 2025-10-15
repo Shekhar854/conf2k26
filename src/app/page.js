@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Track from "./components/Track";
 import Sponsor from "./components/Sponsor";
+import ConferenceGuidelines from "./components/ConferenceGuideline";
 
 export default function Home() {
   const announcements = [
@@ -28,7 +29,7 @@ export default function Home() {
     { label: "SPEAKERS", href: "/speakers", hasDropdown: true },
     { label: "PROGRAM", href: "/program", hasDropdown: true },
     { label: "REGISTRATION", href: "/registration" },
-    { label: "AUTHORS CENTRAL", href: "/authors", hasDropdown: true },
+    { label: "GUIDELINES", href: "/guideline", hasDropdown: false },
     // { label: "PhD COLLOQUIUM", href: "/phd" },
     { label: "SPONSORS", href: "/sponsors" },
     // { label: "ACCOMMODATION", href: "/accommodation", hasDropdown: true },
@@ -64,6 +65,7 @@ export default function Home() {
       <Track/>
       <Sponsor/>
       <Gallery/>
+      <ConferenceGuidelines/>
       <Footer/>
     </div>
   );
