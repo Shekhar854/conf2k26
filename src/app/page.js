@@ -8,6 +8,8 @@ import ThemeToggle from "./components/ThemeToggle";
 import Timeline from "./components/Timeline";
 import buildingImage from '../../public/stock_images/indian_fort_historic_b32d36ef.jpg';
 import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
+import Track from "./components/Track";
 
 export default function Home() {
   const announcements = [
@@ -26,9 +28,9 @@ export default function Home() {
     { label: "PROGRAM", href: "/program", hasDropdown: true },
     { label: "REGISTRATION", href: "/registration" },
     { label: "AUTHORS CENTRAL", href: "/authors", hasDropdown: true },
-    { label: "PhD COLLOQUIUM", href: "/phd" },
+    // { label: "PhD COLLOQUIUM", href: "/phd" },
     { label: "SPONSORS", href: "/sponsors" },
-    { label: "ACCOMMODATION", href: "/accommodation", hasDropdown: true },
+    // { label: "ACCOMMODATION", href: "/accommodation", hasDropdown: true },
     { label: "PREVIOUS UPCONS", href: "/previous", hasDropdown: true },
     { label: "CONTACT", href: "/contact" },
   ];
@@ -58,6 +60,8 @@ export default function Home() {
         onFlyerClick={() => console.log('Download flyer')}
         onRegisterClick={() => console.log('Register now')}
       />
+      <Track/>
+      <Gallery/>
       <Footer/>
     </div>
   );

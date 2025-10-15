@@ -11,9 +11,9 @@ export default function PurpleNavigation({ items = [] }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-purple-700 text-white sticky top-0 z-40">
+    <nav className="bg-orange-600 text-white sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="hidden lg:flex items-center justify-center gap-1 py-2">
+        <div className="hidden lg:flex items-center justify-center flex-wrap">
           {items.map((item, index) => (
             <Link key={index} href={item.href}>
               <Button
