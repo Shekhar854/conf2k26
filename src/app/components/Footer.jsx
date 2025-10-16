@@ -3,7 +3,7 @@ import { FaHome, FaEnvelope, FaPhone, FaWhatsapp, FaFacebookF, FaInstagram, FaTw
 
 const Footer = () => {
   return (
-    <footer className="bg-red-700 text-white pt-12">
+    <footer className="bg-red-600 text-white pt-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Column 1: Who We Are */}
@@ -53,7 +53,7 @@ const Footer = () => {
             <h2 className="text-2xl font-bold mt-8 mb-4">Follow Us On</h2>
             <div className="flex space-x-4">
               <a href="#" className="border border-white rounded-full p-2 hover:bg-yellow-500 hover:text-black transition-colors"><FaFacebookF /></a>
-              <a href="#" className="border border-white rounded-full p-2 hover:bg-yellow-500 hover:text-black transition-colors"><FaInstagram /></a>
+              <a href="https://www.instagram.com/iimtindia/" className="border border-white rounded-full p-2 hover:bg-yellow-500 hover:text-black transition-colors"><FaInstagram /></a>
               <a href="#" className="border border-white rounded-full p-2 hover:bg-yellow-500 hover:text-black transition-colors"><FaTwitter /></a>
               <a href="#" className="border border-white rounded-full p-2 hover:bg-yellow-500 hover:text-black transition-colors"><FaLinkedinIn /></a>
               <a href="#" className="border border-white rounded-full p-2 hover:bg-yellow-500 hover:text-black transition-colors"><FaYoutube /></a>
@@ -77,7 +77,7 @@ const Footer = () => {
       </div>
       <div className="border-t border-red-600 mt-8">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <p className="text-sm text-gray-300">&copy; 2025 IIMT CONF — @devrithm</p>
+          <p className="text-sm text-gray-300">&copy; 2025 IIMT INDIA — @IIMT</p>
           {/* You can add the site logo here if you have it */}
         </div>
       </div>
