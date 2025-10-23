@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React,{ useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { Button, buttonVariants } from "../components/ui/button";
+import { Button, buttonVariants } from "./ui/button";
 
 
 
