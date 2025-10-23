@@ -21,7 +21,7 @@ const CommitteePage = () => {
     { name: 'Prof. (Dr.) Naveen Sharma', designation: '(HOD-MCA)\nIIMT College of Engineering, Greater Noida, U.P', imageUrl: 'https://www.iimtindia.net/CCPdfMoreImages/14DR.%20PANKAJ%20JHA.jpeg' },
     { name: 'Dr. Tabassum Abbasi', designation: '(HOD-CE)\nIIMT College of Engineering, Greater Noida, U.P, India', imageUrl: 'https://www.iimtindia.net/CCPdfMoreImages/14DR.%20PANKAJ%20JHA.jpeg' },
     { name: 'Prof. (Dr.) Deepak Sharma', designation: '(HOD-ASH)\nIIMT College of Engineering, Greater Noida, U.P', imageUrl: 'https://www.iimtindia.net/CCPdfMoreImages/14DR.%20PANKAJ%20JHA.jpeg' },
-    { name: 'Dr. Nitin Waghmare', designation: '(HOD-ME)\nIIMT College of Engineering, Greater Noida, U.P', imageUrl: 'https://www.iimtindia.net/CCPdfMoreImages/14DR.%20PANKAJ%20JHA.jpeg' },
+    { name: 'Dr. Niles Waghmare', designation: '(HOD-ME)\nIIMT College of Engineering, Greater Noida, U.P', imageUrl: 'https://www.iimtindia.net/CCPdfMoreImages/14DR.%20PANKAJ%20JHA.jpeg' },
     { name: 'Dr. Shweta Dhand Suit', designation: '(COORDINATOR-MBA)\nIIMT College of Engineering, Greater Noida, U.P', imageUrl: 'https://www.iimtindia.net/CCPdfMoreImages/14DR.%20PANKAJ%20JHA.jpeg' },
   ];
 

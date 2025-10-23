@@ -1,5 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ConferenceHeader from "./components/ConferenceHeader";
+import YellowBanner from "./components/YellowBanner";
+import PurpleNavigation from "./components/PurpleNavigation";
+import Footer from "./components/Footer";
+import ThemeToggle from "./components/ThemeToggle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,12 +22,42 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const announcements = [
+    "Conference will be held only in PHYSICAL MODE.",
+    "Acceptance notification has been sent.",
+    "Last date of submission for PhD Colloquium is 31st October.",
+    "Registration is till 31st October for Early Bird and 15th November for Standard.",
+    "Early Bird registration is open now.",
+    "Camera Ready submission is open now (Deadline: 31st October 2025)."
+  ];
+
+  const navItems = [
+    { label: "HOME", href: "/" },
+    { label: "COMMITTEE", href: "/committee" },
+    { label: "SPEAKERS", href: "/speakers", hasDropdown: true },
+    { label: "PROGRAM", href: "/program" },
+    { label: "REGISTRATION", href: "/registration" },
+    { label: "GUIDELINES", href: "/guideline" },
+    { label: "SPONSORS", href: "/sponsors" },
+    { label: "PREVIOUS EVENTS", href: "/previous", hasDropdown: true },
+    { label: "CONTACT", href: "/contact" },
+  ];
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="min-h-screen mx-5">
+          <div className="fixed top-4 right-4 z-50">
+            <ThemeToggle />
+          </div>
+          <ConferenceHeader title="ICNGWCET-2K26" dates="12-13 SEP'26 " />
+          <YellowBanner announcements={announcements} />
+          <PurpleNavigation items={navItems} />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

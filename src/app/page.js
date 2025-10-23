@@ -1,41 +1,14 @@
 'use client';
-import ConferenceHeader from "./components/ConferenceHeader";
-import YellowBanner from "./components/YellowBanner";
-import PurpleNavigation from "./components/PurpleNavigation";
 import AboutWithImage from "./components/AboutWithImage";
-import ThemeToggle from "./components/ThemeToggle";
 import Timeline from "./components/Timeline";
 import buildingImage from '../../public/stock_images/indian_fort_historic_b32d36ef.jpg';
-import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Track from "./components/Track";
 import Sponsor from "./components/Sponsor";
 import ConferenceGuidelines from "./components/ConferenceGuideline";
-import LocationMap from "./components/LocationMap";
+import LocationMap from "./components/LocationMap.jsx";
 
 export default function Home() {
-  const announcements = [
-    "Conference will be held only in PHYSICAL MODE.",
-    "Acceptance notification has been sent.",
-    "Last date of submission for PhD Colloquium is 31st October.",
-    "Registration is till 31st October for Early Bird and 15th November for Standard.",
-    "Early Bird registration is open now.",
-    "Camera Ready submission is open now (Deadline: 31st October 2025)."
-  ];
-
-  const navItems = [
-    { label: "HOME", href: "/" },
-    { label: "COMMITTEE", href: "/committee" },
-    { label: "SPEAKERS", href: "/speakers", hasDropdown: true },
-    { label: "PROGRAM", href: "/program" },
-    { label: "REGISTRATION", href: "/registration" },
-    { label: "GUIDELINES", href: "/guideline" },
-    // { label: "PhD COLLOQUIUM", href: "/phd" },
-    { label: "SPONSORS", href: "/sponsors" },
-    // { label: "ACCOMMODATION", href: "/accommodation", hasDropdown: true },
-    { label: "PREVIOUS EVENTS", href: "/previous", hasDropdown: true },
-    { label: "CONTACT", href: "/contact" },
-  ];
 
   const aboutContent = [
     'IIMT College of Engineering Greater Noida: On the morning of August 18, 2005, we began our journey. Since its inception in 2005, it has contributed to the field of technical fields by providing high-quality engineering and management education. IIMT is a prestigious higher education institution that produces meritorious students with exceptional professional recognition and career growth in higher learning, producing meritorious students with excellent career growth and professional recognition.',
@@ -44,25 +17,17 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen mx-5">
-      <div className="fixed top-4 right-4 z-50">
-        <ThemeToggle />
-      </div>
-
-      <ConferenceHeader title="ICNGWCET-2K26" dates="12-13 SEP'26 " />
-      <YellowBanner announcements={announcements} />
-      <PurpleNavigation items={navItems} />
-      <AboutWithImage 
-        title="About ICNGWCET-2K26 " 
+    <>
+      <AboutWithImage
+        title="About ICNGWCET-2K26 "
         content={aboutContent}
         imageUrl={buildingImage}
       />
-     <Timeline/>
+      <Timeline/>
       <Track/>
       <Sponsor/>
       <Gallery/>
       <LocationMap/>
-      <Footer/>
-    </div>
+    </>
   );
 }
