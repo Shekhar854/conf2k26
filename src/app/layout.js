@@ -34,12 +34,27 @@ export default function RootLayout({ children }) {
   const navItems = [
     { label: "HOME", href: "/" },
     { label: "COMMITTEE", href: "/committee" },
-    { label: "SPEAKERS", href: "/speakers", hasDropdown: true },
+    {
+      label: "SPEAKERS",
+      href: "/speakers",
+      hasDropdown: true,
+      dropdownItems: [
+        { label: "Keynote Speakers", href: "/speakers/keynote" },
+        { label: "Tutorial Speakers", href: "/speakers/tutorial" },
+      ],
+    },
     { label: "PROGRAM", href: "/program" },
     { label: "REGISTRATION", href: "/registration" },
     { label: "GUIDELINES", href: "/guideline" },
     { label: "SPONSORS", href: "/sponsors" },
-    { label: "PREVIOUS EVENTS", href: "/previous", hasDropdown: true },
+    {
+      label: "PREVIOUS EVENTS",
+      href: "#",
+      hasDropdown: true,
+      dropdownItems: [
+        { label: "ICNGWCET-2K26", href: "/" },
+      ],
+    },
     { label: "CONTACT", href: "/contact" },
   ];
 

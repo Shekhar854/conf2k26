@@ -8,24 +8,44 @@ import { Button, buttonVariants } from "./ui/button";
 
 export default function PurpleNavigation({ items = [] }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
 
   return (
     <nav className="bg-orange-600 text-white sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="hidden lg:flex items-center justify-center flex-wrap">
           {items.map((item, index) => (
-            <Link
+            <div
               key={index}
-              href={item.href}
-              className={buttonVariants({
-                variant: "ghost",
-                className: "text-white hover:bg-purple-600 text-sm no-default-hover-elevate no-default-active-elevate",
-              })}
-              data-testid={`link-nav-${index}`}
+              className="relative"
+              onMouseEnter={() => item.hasDropdown && setOpenDropdown(index)}
+              onMouseLeave={() => item.hasDropdown && setOpenDropdown(null)}
             >
-              {item.label}
-              {item.hasDropdown && <ChevronDown className="w-3 h-3 ml-1" />}
-            </Link>
+              <Link
+                href={item.href}
+                className={buttonVariants({
+                  variant: "ghost",
+                  className: "text-white hover:bg-purple-600 text-sm no-default-hover-elevate no-default-active-elevate",
+                })}
+                data-testid={`link-nav-${index}`}
+              >
+                {item.label}
+                {item.hasDropdown && <ChevronDown className="w-3 h-3 ml-1" />}
+              </Link>
+              {item.hasDropdown && openDropdown === index && (
+                <div className="absolute top-full left-0 bg-purple-700 rounded-md shadow-lg">
+                  {item.dropdownItems.map((dropdownItem, dropdownIndex) => (
+                    <Link
+                      key={dropdownIndex}
+                      href={dropdownItem.href}
+                      className="block px-4 py-2 text-sm text-white hover:bg-purple-600"
+                    >
+                      {dropdownItem.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
 
